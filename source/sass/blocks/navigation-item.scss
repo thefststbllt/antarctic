@@ -1,0 +1,28 @@
+.navigation-item {
+  @include vp-1023 {
+    display: flex;
+  }
+
+  &__link {
+    color: $color-alice-blue;
+    font-weight: 500;
+    font-size: 1.17vw;
+    transition: 0.3s all;
+    user-select: none;
+    word-break: break-word;
+
+    &:hover {
+      color: $color-dodger-blue;
+      transition: 0.3s all;
+    }
+
+    @include vp-1023 {
+      font-size: 1.57vw;
+    }
+
+    @include vp-767 {
+      font-size: 3.75vw;
+      line-height: 7.5vw;
+    }
+  }
+}

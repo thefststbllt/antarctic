@@ -1,0 +1,23 @@
+.logo {
+  fill: $color-alice-blue;
+  display: flex;
+
+  & svg {
+    width: 5.12vw;
+    height: 2.78vw;
+  }
+
+  @include vp-1023 {
+    & svg {
+      width: 4.95vw;
+      height: 2.6vw;
+    }
+  }
+
+  @include vp-767 {
+    & svg {
+      width: 13vw;
+      height: 7vw;
+    }
+  }
+}

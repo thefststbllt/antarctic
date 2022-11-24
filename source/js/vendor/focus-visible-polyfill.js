@@ -137,7 +137,6 @@ function applyFocusVisiblePolyfill(scope) {
    * @param {Event} e
    */
   function onFocus(e) {
-    // Prevent IE from focusing the document or HTML element.
     if (!isValidFocusTarget(e.target)) {
       return;
     }
@@ -157,10 +156,6 @@ function applyFocusVisiblePolyfill(scope) {
     }
 
     if (e.target.classList.contains('focus-visible') || e.target.hasAttribute('data-focus-visible-added')) {
-      // To detect a tab/window switch, we look for a blur event followed
-      // rapidly by a visibility change.
-      // If we don't see a visibility change within 100ms, it's probably a
-      // regular focus change.
       hadFocusVisibleRecently = true;
       window.clearTimeout(hadFocusVisibleRecentlyTimeout);
       hadFocusVisibleRecentlyTimeout = window.setTimeout(function () {
@@ -177,10 +172,6 @@ function applyFocusVisiblePolyfill(scope) {
    */
   function onVisibilityChange(e) {
     if (document.visibilityState === 'hidden') {
-      // If the tab becomes active again, the browser will handle calling focus
-      // on the element (Safari actually calls it twice).
-      // If this tab change caused a blur on an element with focus-visible,
-      // re-apply the class when the user switches back to the tab.
       if (hadFocusVisibleRecently) {
         hadKeyboardEvent = true;
       }
@@ -236,9 +227,6 @@ function applyFocusVisiblePolyfill(scope) {
     removeInitialPointerMoveListeners();
   }
 
-  // For some kinds of state, we are interested in changes at the global scope
-  // only. For example, global pointer input, global key presses and global
-  // visibility change should affect the state at every scope:
   document.addEventListener('keydown', onKeyDown, true);
   document.addEventListener('mousedown', onPointerDown, true);
   document.addEventListener('pointerdown', onPointerDown, true);
@@ -247,22 +235,10 @@ function applyFocusVisiblePolyfill(scope) {
 
   addInitialPointerMoveListeners();
 
-  // For focus and blur, we specifically care about state changes in the local
-  // scope. This is because focus / blur events that originate from within a
-  // shadow root are not re-dispatched from the host element if it was already
-  // the active element in its own scope:
   scope.addEventListener('focus', onFocus, true);
   scope.addEventListener('blur', onBlur, true);
 
-  // We detect that a node is a ShadowRoot by ensuring that it is a
-  // DocumentFragment and also has a host property. This check covers native
-  // implementation and polyfill implementation transparently. If we only cared
-  // about the native implementation, we could just check if the scope was
-  // an instance of a ShadowRoot.
   if (scope.nodeType === Node.DOCUMENT_FRAGMENT_NODE && scope.host) {
-    // Since a ShadowRoot is a special kind of DocumentFragment, it does not
-    // have a root element to add a class to. So, we add this attribute to the
-    // host element instead:
     scope.host.setAttribute('data-js-focus-visible', '');
   } else if (scope.nodeType === Node.DOCUMENT_NODE) {
     document.documentElement.classList.add('js-focus-visible');
@@ -270,23 +246,13 @@ function applyFocusVisiblePolyfill(scope) {
   }
 }
 
-// It is important to wrap all references to global window and document in
-// these checks to support server-side rendering use cases
-// @see https://github.com/WICG/focus-visible/issues/199
 if (typeof window !== 'undefined' && typeof document !== 'undefined') {
-  // Make the polyfill helper globally available. This can be used as a signal
-  // to interested libraries that wish to coordinate with the polyfill for e.g.,
-  // applying the polyfill to a shadow root:
   window.applyFocusVisiblePolyfill = applyFocusVisiblePolyfill;
-
-  // Notify interested libraries of the polyfill's presence, in case the
-  // polyfill was loaded lazily:
   var event;
 
   try {
     event = new CustomEvent('focus-visible-polyfill-ready');
   } catch (error) {
-    // IE11 does not support using CustomEvent as a constructor directly:
     event = document.createEvent('CustomEvent');
     event.initCustomEvent('focus-visible-polyfill-ready', false, false, {});
   }
@@ -295,7 +261,5 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
 }
 
 if (typeof document !== 'undefined') {
-  // Apply the polyfill to the global document, so that no JavaScript
-  // coordination is required to use the polyfill in the top-level document:
   applyFocusVisiblePolyfill(document);
 }

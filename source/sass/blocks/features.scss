@@ -1,0 +1,78 @@
+.features {
+  &__container {
+    padding-top: 8.1vw;
+    padding-bottom: 8.75vw;
+    background: no-repeat top 0 left 0/100% url("/img/background-features--desktop.webp") $color-pattens-blue;
+
+    @include retina {
+      background: no-repeat top 0 left 0/100% url("/img/background-features--desktop@2x.webp") $color-pattens-blue;
+    }
+
+    @include vp-1023 {
+      padding-top: 11.7vw;
+      padding-bottom: 13vw;
+    }
+
+    @include vp-767 {
+      padding-top: 17.7vw;
+      padding-bottom: 21vw;
+    }
+  }
+
+  &__title {
+    margin: 0 0 3.5vw;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.04vw;
+    line-height: 1.5em;
+
+    @include vp-1023 {
+      margin: 0 0 6.5vw;
+      font-size: 3.39vw;
+    }
+
+    @include vp-767 {
+      margin: 0 0 9.4vw;
+      font-size: 7.53vw;
+      word-break: break-word;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2.92vw;
+
+    @include vp-767 {
+      flex-direction: column;
+      row-gap: 9.3vw;
+    }
+  }
+
+  &__list-item {
+    &:not(:nth-child(3n)) {
+      margin-right: auto;
+
+      @include vp-767 {
+        margin: 0;
+      }
+    }
+
+    @include vp-767 {
+      max-width: none;
+    }
+  }
+}
+
+.features .features__container {
+  @include vp-1023 {
+    background: no-repeat top 0 left 0/100% url("/img/background-features--tablet.webp") $color-pattens-blue;
+
+    @include retina {
+      background: no-repeat top 0 left 0/100% url("/img/background-features--tablet@2x.webp") $color-pattens-blue;
+    }
+  }
+}

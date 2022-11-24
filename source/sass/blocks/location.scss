@@ -1,0 +1,152 @@
+.location {
+  &__container {
+    padding-top: 8.79vw;
+    padding-bottom: 8.79vw;
+    display: grid;
+    grid-template-columns: 40.99vw 36.6vw;
+    column-gap: 7.32vw;
+
+    @include vp-1023 {
+      padding: 13.02vw 5.8vw 9.45vw;
+      grid-template-columns: 42.18vw 42.18vw;
+      column-gap: 4.1vw;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+      padding-top: 17.7vw;
+      padding-bottom: 20.31vw;
+    }
+
+    & iframe {
+      width: 40.99vw;
+      height: 22.4vw;
+      user-select: none;
+
+      @include vp-1023 {
+        width: 42.19vw;
+        height: 43.62vw;
+      }
+
+      @include vp-767 {
+        width: 100%;
+        height: 98.75vw;
+      }
+    }
+  }
+
+  &__text-wrapper {
+    padding-top: 5.47vw;
+
+    @include vp-1023 {
+      padding-top: 8.5vw;
+    }
+
+    @include vp-767 {
+      order: -1;
+      padding: 0;
+    }
+  }
+
+  &__description {
+    font-weight: 500;
+    font-size: 1.32vw;
+    line-height: 1.5em;
+    margin: 0 0 2.38vw;
+
+    @include vp-1023 {
+      font-size: 2.34vw;
+      margin: 0 0 3.5vw;
+    }
+
+    @include vp-767 {
+      font-size: 5.63vw;
+      margin: 0 0 8.6vw;
+    }
+  }
+
+  &__address,
+  &__phone {
+    display: flex;
+
+    @include vp-1023 {
+      font-size: 2.08vw;
+    }
+
+    @include vp-767 {
+      font-size: 5vw;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      height: auto;
+      min-width: 1.32vw;
+      margin-right: 0.8vw;
+
+      @include vp-1023 {
+        min-width: 2.4vw;
+        margin-right: 1vw;
+      }
+
+      @include vp-767 {
+        min-width: 5.63vw;
+        margin-right: 3.1vw;
+      }
+    }
+  }
+
+  &__address {
+    font-weight: 400;
+    font-size: 1.17vw;
+    line-height: 1.5em;
+    font-style: normal;
+    margin: 0 0 1.5vw;
+
+    @include vp-1023 {
+      margin: 0 0 2.8vw;
+    }
+
+    @include vp-767 {
+      margin: 0 0 6.38vw;
+    }
+
+    &::before {
+      background: no-repeat top 0 left 0/100% url("/img/sprite/icon-map-pin.svg");
+
+      @include vp-1023 {
+        background: no-repeat top 0.8vw left 0 url("/img/sprite/icon-map-pin.svg");
+      }
+
+      @include vp-767 {
+        background: no-repeat top 1.7vw left 0 url("/img/sprite/icon-map-pin.svg");
+      }
+    }
+  }
+
+  &__phone {
+    font-weight: 400;
+    font-size: 1.17vw;
+    line-height: 1.5em;
+    width: max-content;
+    max-width: 30vw;
+    user-select: none;
+
+    &:hover {
+      color: $color-dodger-blue;
+    }
+
+    @include vp-1023 {
+      margin: 0 0 12.5vw;
+    }
+
+    @include vp-767 {
+      margin: 0 0 11.5vw;
+      max-width: 70vw;
+    }
+
+    &::before {
+      background: no-repeat top 0 left 0/100% url("/img/sprite/icon-phone.svg");
+    }
+  }
+}

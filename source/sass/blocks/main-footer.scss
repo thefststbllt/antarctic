@@ -1,0 +1,62 @@
+.main-footer {
+  background-color: $color-tangaroa;
+  margin-top: auto;
+
+  &__container {
+    display: flex;
+    align-items: start;
+    padding-top: 3.7vw;
+    padding-bottom: 3.7vw;
+
+    @include vp-1023 {
+      padding-top: 6.4vw;
+      padding-bottom: 6.1vw;
+    }
+
+    @include vp-767 {
+      flex-direction: column;
+      padding-top: 12.7vw;
+      padding-bottom: 12.7vw;
+      row-gap: 7vw;
+    }
+  }
+
+  &__logo {
+    margin-right: 3vw;
+
+    @include vp-1023 {
+      margin: 0 3.3vw 0 0;
+    }
+
+    @include vp-767 {
+      margin: 0;
+    }
+
+    & svg {
+      width: 5.12vw;
+      height: 2.78vw;
+    }
+  }
+
+  &__navigation {
+    margin-top: 0.5vw;
+
+    @include vp-1023 {
+      margin: 0;
+    }
+  }
+
+  &__socials {
+    margin-top: 0.8vw;
+    margin-left: auto;
+    max-width: 30%;
+
+    @include vp-1023 {
+      margin-top: 0;
+    }
+
+    @include vp-767 {
+      margin: -1vw 0 0 -2.2vw;
+    }
+  }
+}

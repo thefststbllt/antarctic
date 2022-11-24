@@ -1,0 +1,53 @@
+.cruises {
+  &__container {
+    padding-top: 6.86vw;
+    padding-bottom: 8.75vw;
+
+    @include vp-1023 {
+      padding-top: 12.65vw;
+      padding-bottom: 12.94vw;
+    }
+
+    @include vp-767 {
+      padding-top: 19.5vw;
+      padding-bottom: 19.7vw;
+    }
+  }
+
+  &__title {
+    color: $color-tangaroa;
+    margin: 0 0 4.3vw;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.05vw;
+
+    @include vp-1023 {
+      font-size: 3.39vw;
+      margin: 0 0 7.4vw;
+    }
+
+    @include vp-767 {
+      font-size: 7.5vw;
+      margin: 0 0 11.4vw;
+      word-break: break-word;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 2.19vw;
+
+    @include vp-1023 {
+      row-gap: 3.95vw;
+    }
+
+    @include vp-767 {
+      row-gap: 9.5vw;
+    }
+  }
+}

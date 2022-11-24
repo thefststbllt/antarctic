@@ -1,0 +1,59 @@
+.socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include vp-1023 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.9vw;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 4.2vw;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-left: 1.9vw;
+
+      @include vp-1023 {
+        margin: 0;
+      }
+    }
+  }
+
+  &__item-link {
+    & svg {
+      fill: $color-alice-blue;
+      width: 1.5vw;
+      height: 1.5vw;
+      transition: 0.3s all;
+    }
+
+    &:hover svg {
+      fill: $color-dodger-blue;
+      filter: drop-shadow(0 0 3px $color-alice-blue);
+      transition: 0.3s all;
+    }
+
+    @include vp-1023 {
+      & svg {
+        width: 2.8vw;
+        height: 2.1vw;
+      }
+    }
+
+    @include vp-767 {
+      & svg {
+        width: 7.1vw;
+        height: 5.1vw;
+      }
+    }
+  }
+}

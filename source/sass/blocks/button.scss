@@ -1,0 +1,24 @@
+.button {
+  font-weight: 600;
+  text-align: center;
+  background-color: $color-alice-blue;
+  color: $color-tangaroa;
+  transition: 0.3s all;
+  user-select: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-dodger-blue;
+    color: $color-default-white;
+    transition: 0.3s all;
+  }
+
+  &:focus {
+    border-radius: 0.1vw;
+    outline: 0.1vw solid $color-alice-blue;
+  }
+
+  &:hover {
+    transition: 0.3s all;
+  }
+}

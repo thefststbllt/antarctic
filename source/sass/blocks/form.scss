@@ -1,0 +1,364 @@
+.form {
+  &__container {
+    padding: 3.75vw 11.95vw 3.59vw;
+    display: grid;
+    grid-template-columns: 1fr 29.5vw;
+    column-gap: 5vw;
+    row-gap: 0.5vw;
+    background: no-repeat top 0 left 0/100% url("/img/background-form--desktop.webp") $color-link-water;
+
+    @include retina {
+      background-image: url("/img/background-form--desktop@2x.webp");
+    }
+
+    @include vp-1023 {
+      padding: 11.4vw 22vw 13vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      column-gap: 0;
+      row-gap: 0;
+    }
+
+    @include vp-767 {
+      padding: 18.6vw 5vw 20.4vw;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.93vw;
+    line-height: 1.5em;
+    display: flex;
+    align-items: end;
+
+    @include vp-1023 {
+      font-size: 4.42vw;
+      justify-content: center;
+      margin: 0 0 0.6vw;
+    }
+
+    @include vp-767 {
+      font-size: 7.5vw;
+      line-height: 1.29em;
+      max-width: 80vw;
+      text-align: center;
+      margin: 0 0 3.9vw;
+      word-break: break-word;
+    }
+  }
+
+  &__description {
+    margin: 0 0 0.7vw;
+    font-weight: 400;
+    font-size: 1.32vw;
+    line-height: 1.5em;
+    max-width: 26vw;
+
+    @include vp-1023 {
+      font-size: 2.34vw;
+      text-align: center;
+      max-width: 45vw;
+      margin: 0 0 6.9vw;
+    }
+
+    @include vp-767 {
+      font-size: 5vw;
+      line-height: 1.4em;
+      max-width: 90%;
+      margin: 0 0 10.6vw;
+    }
+  }
+
+  & form {
+    grid-area: 1/2/3/3;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-sapphire;
+    color: $color-alice-blue;
+    padding: 3.16vw 3.66vw 3.68vw;
+
+    @include vp-1023 {
+      width: 52.4vw;
+      padding: 5.65vw 6.5vw 6.5vw;
+    }
+
+    @include vp-767 {
+      width: 90.5vw;
+      padding: 10.5vw 9.38vw 12.5vw;
+    }
+
+    & p {
+      font-weight: 500;
+      font-size: 1.31vw;
+      line-height: 1.5em;
+      margin: 0 0 2.05vw;
+
+      @include vp-1023 {
+        font-size: 2.34vw;
+        line-height: 1.5em;
+        margin: 0 0 3.6vw;
+      }
+
+      @include vp-767 {
+        font-size: 5.62vw;
+        line-height: 1.4em;
+        text-align: center;
+        margin: 0 0 8.94vw;
+      }
+    }
+
+    & label {
+      margin: 0 0 1.46vw;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      @include vp-1023 {
+        margin: 0 0 2.6vw;
+      }
+
+      &:last-of-type {
+        margin: 0 0 2.15vw;
+
+        @include vp-1023 {
+          margin: 0 0 3.9vw;
+        }
+
+        @include vp-767 {
+          margin: 0 0 8.2vw;
+        }
+      }
+
+      @include vp-767 {
+        margin: 0 0 6.2vw;
+      }
+    }
+
+    & input[type="text"] {
+      width: 100%;
+      padding: 0.9vw 1.15vw;
+      border: none;
+      font-size: 1.03vw;
+      line-height: 1.3em;
+
+      &:hover {
+        outline: 0.2vw solid $color-royal-blue;
+      }
+
+      @include vp-1023 {
+        padding: 1.68vw 2.1vw 1.55vw;
+        font-size: 1.82vw;
+
+        &:hover {
+          outline: 0.3vw solid $color-royal-blue;
+        }
+      }
+
+      @include vp-767 {
+        font-size: 4.38vw;
+        padding: 4.2vw 5vw 3.6vw;
+
+        &:hover {
+          outline: 0.5vw solid $color-royal-blue;
+        }
+      }
+
+      &::placeholder {
+        font-size: 1.04vw;
+        line-height: 1em;
+        user-select: none;
+
+        @include vp-1023 {
+          font-size: 1.82vw;
+        }
+
+        @include vp-767 {
+          font-size: 4.38vw;
+        }
+      }
+    }
+
+
+    & input[type="checkbox"] {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      width: 1px;
+
+      &:hover + span {
+        outline: 0.2vw solid $color-royal-blue;
+      }
+
+      @include vp-767 {
+        &:hover + span {
+          outline: 0.5vw solid $color-royal-blue;
+        }
+      }
+
+      & + span {
+        display: block;
+        min-width: 1.32vw;
+        height: 1.32vw;
+        margin: 0 0.4vw 0 0;
+        background-color: $color-alice-blue;
+        position: relative;
+
+        @include vp-1023 {
+          min-width: 2.35vw;
+          height: 2.35vw;
+          margin: 0 0.7vw 0 0;
+        }
+
+        @include vp-767 {
+          align-self: start;
+          min-width: 6.2vw;
+          height: 6.2vw;
+          margin: 0 2.3vw 0 0;
+        }
+      }
+
+      &:checked + span {
+        &::before,
+        &::after {
+          content: "";
+          display: block;
+          width: 0.7vw;
+          height: 0.07vw;
+          background-color: $color-tangaroa;
+          position: absolute;
+
+          @include vp-1023 {
+            height: 0.14vw;
+          }
+
+          @include vp-767 {
+            height: 0.3vw;
+          }
+        }
+
+        &::before {
+          width: 0.4vw;
+          transform: rotate(45deg);
+          top: 0.66vw;
+          left: 0.3vw;
+
+          @include vp-1023 {
+            top: 1.2vw;
+            left: 0.5vw;
+            width: 0.8vw;
+          }
+
+          @include vp-767 {
+            top: 3.4vw;
+            left: 1.2vw;
+            width: 1.8vw;
+          }
+        }
+
+        &::after {
+          width: 0.59vw;
+          transform: rotate(-45deg);
+          top: 0.59vw;
+          left: 0.51vw;
+
+          @include vp-1023 {
+            top: 1.1vw;
+            left: 0.95vw;
+            width: 1.1vw;
+          }
+
+          @include vp-767 {
+            top: 3.2vw;
+            left: 2.2vw;
+            width: 2.6vw;
+          }
+        }
+      }
+
+      &:focus + span {
+        outline: 0.2vw solid $color-royal-blue;
+
+        @include vp-767 {
+          outline-width: 0.8vw;
+        }
+      }
+
+      & ~ span {
+        font-size: 0.73vw;
+        line-height: 1.9em;
+        user-select: none;
+
+        &:hover {
+          color: $color-royal-blue;
+        }
+
+        @include vp-1023 {
+          font-size: 1.3vw;
+        }
+
+        @include vp-767 {
+          font-size: 3.15vw;
+          line-height: 1.2em;
+          max-width: 49vw;
+        }
+      }
+    }
+
+    & button {
+      font-weight: 600;
+      font-size: 1.03vw;
+      line-height: 1.5em;
+      border: none;
+      padding: 0.77vw 1vw 0.84vw;
+      cursor: pointer;
+      transition: 0.3s all;
+      user-select: none;
+
+      &:hover,
+      &:focus {
+        background-color: $color-dodger-blue;
+        color: $color-default-white;
+        transition: 0.3s all;
+      }
+
+      &:focus {
+        outline: 0.1vw solid $color-alice-blue;
+      }
+
+      &:hover {
+        transition: 0.3s all;
+      }
+
+      @include vp-1023 {
+        font-size: 1.85vw;
+        padding: 1.25vw 1vw 1.5vw;
+      }
+
+      @include vp-767 {
+        font-size: 4.4vw;
+        padding: 3.25vw 3vw 3.5vw;
+      }
+    }
+  }
+}
+
+.form .form__container {
+  @include vp-1023 {
+    background: no-repeat top 0 left 0/100% url("/img/background-form--tablet.webp") $color-link-water;
+
+    @include retina {
+      background-image: url("/img/background-form--tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    padding: 18.6vw 5vw 20.4vw;
+    background: no-repeat top 0 left 0/100% url("/img/background-form--mobile.webp") $color-link-water;
+
+    @include retina {
+      background-image: url("/img/background-form--mobile@2x.webp");
+    }
+  }
+}

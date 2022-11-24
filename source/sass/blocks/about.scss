@@ -1,0 +1,104 @@
+.about {
+  &__container {
+    padding-top: 8.65vw;
+    padding-bottom: 10.6vw;
+    background-color: $color-alice-blue;
+    display: grid;
+    grid-template-columns: 37.48vw 1fr;
+    column-gap: 6.4vw;
+    row-gap: 1.8vw;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 40.99vw;
+      height: 22.04vw;
+      grid-area: 1/2/3/3;
+      background: no-repeat top 0 left 0/100% url("/img/pinguins--desktop.webp");
+
+      @include retina {
+        background: no-repeat top 0 left 0/100% url("/img/pinguins--desktop@2x.webp");
+      }
+    }
+
+    @include vp-1023 {
+      padding-top: 13vw;
+      padding-bottom: 12.3vw;
+      column-gap: 3.6vw;
+      grid-template-columns: 42vw 42vw;
+
+      &::after {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    @include vp-767 {
+      row-gap: 4.8vw;
+      column-gap: 0;
+      padding-top: 18vw;
+      padding-bottom: 26.8vw;
+      grid-template-columns: 1fr;
+
+      &::after {
+        margin: 8.7vw 0 0;
+        grid-area: unset;
+        min-height: 48.71vw;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    display: flex;
+    align-items: end;
+    font-weight: 600;
+    font-size: 2.05vw;
+    line-height: 1.5em;
+
+    @include vp-1023 {
+      margin: -9px 0 0;
+      align-items: start;
+      font-size: 3.39vw;
+      line-height: 1.4em;
+    }
+
+    @include vp-767 {
+      margin: 0;
+      font-size: 7.5vw;
+      word-break: break-word;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 1.17vw;
+    line-height: 1.5em;
+
+    @include vp-1023 {
+      font-size: 2.08vw;
+    }
+
+    @include vp-767 {
+      font-size: 5vw;
+    }
+  }
+}
+
+.about .about__container::after {
+  @include vp-1023 {
+    background: no-repeat top 0 left 0/100% url("/img/pinguins--tablet.webp");
+
+    @include retina {
+      background: no-repeat top 0 left 0/100% url("/img/pinguins--tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background: no-repeat top 0 left 0/100% url("/img/pinguins--mobile.webp");
+
+    @include retina {
+      background: no-repeat top 0 left 0/100% url("/img/pinguins--mobile@2x.webp");
+    }
+  }
+}

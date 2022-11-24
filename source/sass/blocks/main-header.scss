@@ -1,0 +1,89 @@
+.main-header {
+  &__container {
+    min-height: 47.6vw;
+    padding-top: 2.6vw;
+    padding-bottom: 6vw;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    background: no-repeat top 0 left 0/100% url("/img/background-promo--desktop.webp") $color-wedgewood;
+
+    @include retina {
+      background: no-repeat top 0 left 0/100% url("/img/background-promo--desktop@2x.webp") $color-wedgewood;
+    }
+
+    @include vp-1023 {
+      min-height: 83.1vw;
+      padding-top: 3.5vw;
+      padding-bottom: 2vw;
+      filter: none;
+    }
+
+    @include vp-767 {
+      padding-top: 5.7vw;
+      padding-bottom: 55.8vw;
+      min-height: 156.1vw;
+    }
+  }
+
+
+  &__page-title {
+    font-weight: 700;
+    font-size: 3.9vw;
+    line-height: 4.9vw;
+    letter-spacing: 0.03vw;
+    color: $color-alice-blue;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 14.35vw auto 0.8vw 7vw;
+
+    @include vp-1023 {
+      font-size: 6.47vw;
+      line-height: 1.24em;
+      margin: 28.2vw auto 2.1vw 0;
+      text-shadow: none;
+    }
+
+    @include vp-767 {
+      font-size: 11.13vw;
+      margin: 47.5vw auto 3.5vw 0;
+      word-break: break-word;
+    }
+  }
+
+  &__page-description {
+    color: $color-alice-blue;
+    font-weight: 400;
+    font-size: 1.46vw;
+    line-height: 1.8vw;
+    margin: 0 0 0 7vw;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include vp-1023 {
+      font-size: 2.35vw;
+      line-height: 1.8vw;
+      margin: 0 0 0;
+      text-shadow: none;
+    }
+
+    @include vp-767 {
+      font-size: 4.95vw;
+      line-height: 6.8vw;
+    }
+  }
+}
+
+.main-header .main-header__container {
+  @include vp-1023 {
+    background: no-repeat top 0 left 0/100% url("/img/background-promo--tablet.webp") $color-wedgewood;
+
+    @include retina {
+      background: no-repeat top 0 left 0/100% url("/img/background-promo--tablet@2x.webp") $color-wedgewood;
+    }
+  }
+
+  @include vp-767 {
+    background: no-repeat bottom 0 left 0/100% url("/img/background-promo--mobile.webp") $color-wedgewood;
+
+    @include retina {
+      background: no-repeat bottom 0 left 0/100% url("/img/background-promo--mobile@2x.webp") $color-wedgewood;
+    }
+  }
+}
