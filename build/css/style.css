@@ -1119,7 +1119,9 @@ button,
   margin: 0 0 2.15vw;
 }
 
-.form form input[type=text] {
+.form form input[type=text],
+.form form input[type=tel],
+.form form input[type=email] {
   width: 100%;
   padding: 0.9vw 1.15vw;
   border: none;
@@ -1127,39 +1129,51 @@ button,
   line-height: 1.3em;
 }
 
-.form form input[type=text]:hover {
+.form form input[type=text]:hover,
+.form form input[type=tel]:hover,
+.form form input[type=email]:hover {
   outline: 0.2vw solid #4169e1;
 }
 
-.form form input[type=text]::-webkit-input-placeholder {
+.form form input[type=text]::-webkit-input-placeholder,
+.form form input[type=tel]::-webkit-input-placeholder,
+.form form input[type=email]::-webkit-input-placeholder {
   font-size: 1.04vw;
   line-height: 1em;
   -webkit-user-select: none;
   user-select: none;
 }
 
-.form form input[type=text]::-moz-placeholder {
+.form form input[type=text]::-moz-placeholder,
+.form form input[type=tel]::-moz-placeholder,
+.form form input[type=email]::-moz-placeholder {
   font-size: 1.04vw;
   line-height: 1em;
   -moz-user-select: none;
   user-select: none;
 }
 
-.form form input[type=text]:-ms-input-placeholder {
+.form form input[type=text]:-ms-input-placeholder,
+.form form input[type=tel]:-ms-input-placeholder,
+.form form input[type=email]:-ms-input-placeholder {
   font-size: 1.04vw;
   line-height: 1em;
   -ms-user-select: none;
   user-select: none;
 }
 
-.form form input[type=text]::-ms-input-placeholder {
+.form form input[type=text]::-ms-input-placeholder,
+.form form input[type=tel]::-ms-input-placeholder,
+.form form input[type=email]::-ms-input-placeholder {
   font-size: 1.04vw;
   line-height: 1em;
   -ms-user-select: none;
   user-select: none;
 }
 
-.form form input[type=text]::placeholder {
+.form form input[type=text]::placeholder,
+.form form input[type=tel]::placeholder,
+.form form input[type=email]::placeholder {
   font-size: 1.04vw;
   line-height: 1em;
   -webkit-user-select: none;
@@ -1464,47 +1478,6 @@ button,
   transition: 0.3s all;
 }
 
-/* @mixin hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*  @include hover-focus {
-      opacity: 0.8;
-    }
-*/
-
-/*@mixin hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-  }
-*/
-
-/*@mixin focus {
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*@mixin active {
-    &.focus-visible:active {
-      @content;
-    }
-  }
-*/
-
 @media (max-width: 1023px) {
   .container {
     padding: 0 5.8vw;
@@ -1777,32 +1750,46 @@ button,
     margin: 0 0 3.9vw;
   }
 
-  .form form input[type=text] {
+  .form form input[type=text],
+  .form form input[type=tel],
+  .form form input[type=email] {
     padding: 1.68vw 2.1vw 1.55vw;
     font-size: 1.82vw;
   }
 
-  .form form input[type=text]:hover {
+  .form form input[type=text]:hover,
+  .form form input[type=tel]:hover,
+  .form form input[type=email]:hover {
     outline: 0.3vw solid #4169e1;
   }
 
-  .form form input[type=text]::-webkit-input-placeholder {
+  .form form input[type=text]::-webkit-input-placeholder,
+  .form form input[type=tel]::-webkit-input-placeholder,
+  .form form input[type=email]::-webkit-input-placeholder {
     font-size: 1.82vw;
   }
 
-  .form form input[type=text]::-moz-placeholder {
+  .form form input[type=text]::-moz-placeholder,
+  .form form input[type=tel]::-moz-placeholder,
+  .form form input[type=email]::-moz-placeholder {
     font-size: 1.82vw;
   }
 
-  .form form input[type=text]:-ms-input-placeholder {
+  .form form input[type=text]:-ms-input-placeholder,
+  .form form input[type=tel]:-ms-input-placeholder,
+  .form form input[type=email]:-ms-input-placeholder {
     font-size: 1.82vw;
   }
 
-  .form form input[type=text]::-ms-input-placeholder {
+  .form form input[type=text]::-ms-input-placeholder,
+  .form form input[type=tel]::-ms-input-placeholder,
+  .form form input[type=email]::-ms-input-placeholder {
     font-size: 1.82vw;
   }
 
-  .form form input[type=text]::placeholder {
+  .form form input[type=text]::placeholder,
+  .form form input[type=tel]::placeholder,
+  .form form input[type=email]::placeholder {
     font-size: 1.82vw;
   }
 
@@ -2429,32 +2416,46 @@ button,
     margin: 0 0 6.2vw;
   }
 
-  .form form input[type=text] {
+  .form form input[type=text],
+  .form form input[type=tel],
+  .form form input[type=email] {
     font-size: 4.38vw;
     padding: 4.2vw 5vw 3.6vw;
   }
 
-  .form form input[type=text]:hover {
+  .form form input[type=text]:hover,
+  .form form input[type=tel]:hover,
+  .form form input[type=email]:hover {
     outline: 0.5vw solid #4169e1;
   }
 
-  .form form input[type=text]::-webkit-input-placeholder {
+  .form form input[type=text]::-webkit-input-placeholder,
+  .form form input[type=tel]::-webkit-input-placeholder,
+  .form form input[type=email]::-webkit-input-placeholder {
     font-size: 4.38vw;
   }
 
-  .form form input[type=text]::-moz-placeholder {
+  .form form input[type=text]::-moz-placeholder,
+  .form form input[type=tel]::-moz-placeholder,
+  .form form input[type=email]::-moz-placeholder {
     font-size: 4.38vw;
   }
 
-  .form form input[type=text]:-ms-input-placeholder {
+  .form form input[type=text]:-ms-input-placeholder,
+  .form form input[type=tel]:-ms-input-placeholder,
+  .form form input[type=email]:-ms-input-placeholder {
     font-size: 4.38vw;
   }
 
-  .form form input[type=text]::-ms-input-placeholder {
+  .form form input[type=text]::-ms-input-placeholder,
+  .form form input[type=tel]::-ms-input-placeholder,
+  .form form input[type=email]::-ms-input-placeholder {
     font-size: 4.38vw;
   }
 
-  .form form input[type=text]::placeholder {
+  .form form input[type=text]::placeholder,
+  .form form input[type=tel]::placeholder,
+  .form form input[type=email]::placeholder {
     font-size: 4.38vw;
   }
 

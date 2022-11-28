@@ -136,7 +136,9 @@
       }
     }
 
-    & input[type="text"] {
+    & input[type="text"],
+    & input[type="tel"],
+    & input[type="email"] {
       width: 100%;
       padding: 0.9vw 1.15vw;
       border: none;
