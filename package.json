@@ -1,8 +1,8 @@
 {
-  "name": "Liga-A-accelerator-template",
+  "name": "Liga-A-accelerator-Antarctic",
   "version": "2.0.0",
   "type": "module",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Проект Круизы в Антарктику по шаблону сборки Лиги А",
   "browserslist": [
     "last 3 versions",
     "IE 11",

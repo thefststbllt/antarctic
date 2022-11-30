@@ -182,6 +182,66 @@
       }
     }
 
+    & label:has(input[type="tel"]:focus:invalid) {
+      color: $color-sapphire;
+      text-align: center;
+      font-weight: 500;
+      font-size: 0.8vw;
+      line-height: 1.3em;
+      position: relative;
+
+      &::before {
+        content: 'Формат номера телефона: +7(XXX)XXX-XX-XX';
+        display: inline-block;
+        width: 15vw;
+        padding: 1vw;
+        border-radius: 1vw;
+        height: auto;
+        background-color: $color-default-white;
+        box-shadow: 0 0 0.1vw 0.01vw $color-sapphire;
+        position: absolute;
+        bottom: 0;
+        left: -17vw;
+      }
+      &::after {
+        content: '';
+        display: block;
+        border-top: 1.1vw solid transparent;
+        border-left: 1.5vw solid $color-default-white;
+        border-bottom: 1.1vw solid transparent;
+        position: absolute;
+        left: -2.2vw;
+      }
+
+      @include vp-1023 {
+        &::before {
+          width: 26vw;
+          left: -28vw;
+          font-size: 1.6vw;
+          line-height: 1.3em;
+        }
+      }
+
+      @include vp-767 {
+        &::before {
+          font-size: 4vw;
+          padding: 5vw;
+          width: 50vw;
+          height: 26vw;
+          top: -32vw;
+          left: 0;
+          box-shadow: 0 0 1vw 0.1vw $color-sapphire;
+        }
+
+        &::after {
+          border-right: 3vw solid transparent;
+          border-top: 4vw solid $color-default-white;
+          border-left: 3vw solid transparent;
+          top: -6.5vw;
+          left: 5vw;
+        }
+      }
+    }
 
     & input[type="checkbox"] {
       position: absolute;
