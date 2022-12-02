@@ -390,7 +390,7 @@ template {
   font-family: "Montserrat";
   font-weight: 400;
   font-style: normal;
-  src: local("Montserrat"), url("/fonts/montserrat-regular.woff2") format("woff2"), url("/fonts/montserrat-regular.woff") format("woff");
+  src: local("Montserrat"), url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -398,7 +398,7 @@ template {
   font-family: "Montserrat";
   font-weight: 500;
   font-style: normal;
-  src: local("Montserrat"), url("/fonts/montserrat-medium.woff2") format("woff2"), url("/fonts/montserrat-medium.woff") format("woff");
+  src: local("Montserrat"), url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
   font-display: swap;
 }
 
@@ -406,7 +406,7 @@ template {
   font-family: "Montserrat";
   font-weight: 600;
   font-style: normal;
-  src: local("Montserrat"), url("/fonts/montserrat-semibold.woff2") format("woff2"), url("/fonts/montserrat-semibold.woff") format("woff");
+  src: local("Montserrat"), url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
   font-display: swap;
 }
 
@@ -414,7 +414,7 @@ template {
   font-family: "Montserrat";
   font-weight: 700;
   font-style: normal;
-  src: local("Montserrat"), url("/fonts/montserrat-bold.woff2") format("woff2"), url("/fonts/montserrat-bold.woff") format("woff");
+  src: local("Montserrat"), url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -642,7 +642,7 @@ button,
   padding-bottom: 6vw;
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  background: no-repeat top 0 left 0/100% url("/img/background-promo--desktop.webp") #4e6b8b;
+  background: no-repeat top 0 left 0/100% url("../img/background-promo--desktop.webp") #4e6b8b;
 }
 
 .main-header__page-title {
@@ -738,7 +738,7 @@ button,
 
 .about__container {
   padding-top: 8.65vw;
-  padding-bottom: 10.6vw;
+  padding-bottom: 10.7vw;
   background-color: #f9fbfd;
   display: -ms-grid;
   display: grid;
@@ -760,7 +760,7 @@ button,
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 1/2/3/3;
-  background: no-repeat top 0 left 0/100% url("/img/pinguins--desktop.webp");
+  background: no-repeat top 0 left 0/100% url("../img/pinguins--desktop.webp");
 }
 
 .about__title {
@@ -785,7 +785,7 @@ button,
 .features__container {
   padding-top: 8.1vw;
   padding-bottom: 8.75vw;
-  background: no-repeat top 0 left 0/100% url("/img/background-features--desktop.webp") #cddeed;
+  background: no-repeat top 0 left 0/100% url("../img/background-features--desktop.webp") #cddeed;
 }
 
 .features__title {
@@ -1016,35 +1016,35 @@ button,
 }
 
 .cruises-item--astoria .cruises-item__order-button::before {
-  background-image: url("/img/content-astoria--desktop.webp");
+  background-image: url("../img/content-astoria--desktop.webp");
 }
 
 .cruises-item--eline .cruises-item__order-button::before {
-  background-image: url("/img/content-eline--desktop.webp");
+  background-image: url("../img/content-eline--desktop.webp");
 }
 
 .cruises-item--atlantis .cruises-item__order-button::before {
-  background-image: url("/img/content-atlantis--desktop.webp");
+  background-image: url("../img/content-atlantis--desktop.webp");
 }
 
 .cruises-item--odyssey .cruises-item__order-button::before {
-  background-image: url("/img/content-odyssey--desktop.webp");
+  background-image: url("../img/content-odyssey--desktop.webp");
 }
 
 .cruises-item--olympia .cruises-item__order-button::before {
-  background-image: url("/img/content-olympia--desktop.webp");
+  background-image: url("../img/content-olympia--desktop.webp");
 }
 
 .cruises-item--aurora .cruises-item__order-button::before {
-  background-image: url("/img/content-aurora--desktop.webp");
+  background-image: url("../img/content-aurora--desktop.webp");
 }
 
 .cruises-item--leonor .cruises-item__order-button::before {
-  background-image: url("/img/content-leonor--desktop.webp");
+  background-image: url("../img/content-leonor--desktop.webp");
 }
 
 .cruises-item--minion-1 .cruises-item__order-button::before {
-  background-image: url("/img/content-minion-1--desktop.webp");
+  background-image: url("../img/content-minion-1--desktop.webp");
 }
 
 .form__container {
@@ -1057,7 +1057,7 @@ button,
   -moz-column-gap: 5vw;
   column-gap: 5vw;
   row-gap: 0.5vw;
-  background: no-repeat top 0 left 0/100% url("/img/background-form--desktop.webp") #cacfd4;
+  background: no-repeat top 0 left 0/100% url("../img/background-form--desktop.webp") #cacfd4;
 }
 
 .form__title {
@@ -1375,7 +1375,7 @@ button,
 }
 
 .location__address::before {
-  background: no-repeat top 0 left 0/100% url("/img/sprite/icon-map-pin.svg");
+  background: no-repeat top 0 left 0/100% url("../img/sprite/icon-map-pin.svg");
 }
 
 .location__phone {
@@ -1397,7 +1397,7 @@ button,
 }
 
 .location__phone::before {
-  background: no-repeat top 0 left 0/100% url("/img/sprite/icon-phone.svg");
+  background: no-repeat top 0 left 0/100% url("../img/sprite/icon-phone.svg");
 }
 
 .logo {
@@ -1542,7 +1542,7 @@ button,
   }
 
   .main-header .main-header__container {
-    background: no-repeat top 0 left 0/100% url("/img/background-promo--tablet.webp") #4e6b8b;
+    background: no-repeat top 0 left 0/100% url("../img/background-promo--tablet.webp") #4e6b8b;
   }
 
   .navigation {
@@ -1599,7 +1599,7 @@ button,
   }
 
   .about .about__container::after {
-    background: no-repeat top 0 left 0/100% url("/img/pinguins--tablet.webp");
+    background: no-repeat top 0 left 0/100% url("../img/pinguins--tablet.webp");
   }
 
   .features__container {
@@ -1613,7 +1613,7 @@ button,
   }
 
   .features .features__container {
-    background: no-repeat top 0 left 0/100% url("/img/background-features--tablet.webp") #cddeed;
+    background: no-repeat top 0 left 0/100% url("../img/background-features--tablet.webp") #cddeed;
   }
 
   .features-item {
@@ -1703,35 +1703,35 @@ button,
   }
 
   .cruises .cruises-item--astoria .cruises-item__order-button::before {
-    background-image: url("/img/content-astoria--tablet.webp");
+    background-image: url("../img/content-astoria--tablet.webp");
   }
 
   .cruises .cruises-item--eline .cruises-item__order-button::before {
-    background-image: url("/img/content-eline--tablet.webp");
+    background-image: url("../img/content-eline--tablet.webp");
   }
 
   .cruises .cruises-item--atlantis .cruises-item__order-button::before {
-    background-image: url("/img/content-atlantis--tablet.webp");
+    background-image: url("../img/content-atlantis--tablet.webp");
   }
 
   .cruises .cruises-item--odyssey .cruises-item__order-button::before {
-    background-image: url("/img/content-odyssey--tablet.webp");
+    background-image: url("../img/content-odyssey--tablet.webp");
   }
 
   .cruises .cruises-item--olympia .cruises-item__order-button::before {
-    background-image: url("/img/content-olympia--tablet.webp");
+    background-image: url("../img/content-olympia--tablet.webp");
   }
 
   .cruises .cruises-item--aurora .cruises-item__order-button::before {
-    background-image: url("/img/content-aurora--tablet.webp");
+    background-image: url("../img/content-aurora--tablet.webp");
   }
 
   .cruises .cruises-item--leonor .cruises-item__order-button::before {
-    background-image: url("/img/content-leonor--tablet.webp");
+    background-image: url("../img/content-leonor--tablet.webp");
   }
 
   .cruises .cruises-item--minion-1 .cruises-item__order-button::before {
-    background-image: url("/img/content-minion-1--tablet.webp");
+    background-image: url("../img/content-minion-1--tablet.webp");
   }
 
   .form__container {
@@ -1869,7 +1869,7 @@ button,
   }
 
   .form .form__container {
-    background: no-repeat top 0 left 0/100% url("/img/background-form--tablet.webp") #cacfd4;
+    background: no-repeat top 0 left 0/100% url("../img/background-form--tablet.webp") #cacfd4;
   }
 
   .location__container {
@@ -1911,7 +1911,7 @@ button,
   }
 
   .location__address::before {
-    background: no-repeat top 0.8vw left 0 url("/img/sprite/icon-map-pin.svg");
+    background: no-repeat top 0.8vw left 0 url("../img/sprite/icon-map-pin.svg");
   }
 
   .location__phone {
@@ -1978,51 +1978,51 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .main-header .main-header__container {
-    background: no-repeat top 0 left 0/100% url("/img/background-promo--tablet@2x.webp") #4e6b8b;
+    background: no-repeat top 0 left 0/100% url("../img/background-promo--tablet@2x.webp") #4e6b8b;
   }
 
   .about .about__container::after {
-    background: no-repeat top 0 left 0/100% url("/img/pinguins--tablet@2x.webp");
+    background: no-repeat top 0 left 0/100% url("../img/pinguins--tablet@2x.webp");
   }
 
   .features .features__container {
-    background: no-repeat top 0 left 0/100% url("/img/background-features--tablet@2x.webp") #cddeed;
+    background: no-repeat top 0 left 0/100% url("../img/background-features--tablet@2x.webp") #cddeed;
   }
 
   .cruises .cruises-item--astoria .cruises-item__order-button::before {
-    background-image: url("/img/content-astoria--tablet@2x.webp");
+    background-image: url("../img/content-astoria--tablet@2x.webp");
   }
 
   .cruises .cruises-item--eline .cruises-item__order-button::before {
-    background-image: url("/img/content-eline--tablet@2x.webp");
+    background-image: url("../img/content-eline--tablet@2x.webp");
   }
 
   .cruises .cruises-item--atlantis .cruises-item__order-button::before {
-    background-image: url("/img/content-atlantis--tablet@2x.webp");
+    background-image: url("../img/content-atlantis--tablet@2x.webp");
   }
 
   .cruises .cruises-item--odyssey .cruises-item__order-button::before {
-    background-image: url("/img/content-odyssey--tablet@2x.webp");
+    background-image: url("../img/content-odyssey--tablet@2x.webp");
   }
 
   .cruises .cruises-item--olympia .cruises-item__order-button::before {
-    background-image: url("/img/content-olympia--tablet@2x.webp");
+    background-image: url("../img/content-olympia--tablet@2x.webp");
   }
 
   .cruises .cruises-item--aurora .cruises-item__order-button::before {
-    background-image: url("/img/content-aurora--tablet@2x.webp");
+    background-image: url("../img/content-aurora--tablet@2x.webp");
   }
 
   .cruises .cruises-item--leonor .cruises-item__order-button::before {
-    background-image: url("/img/content-leonor--tablet@2x.webp");
+    background-image: url("../img/content-leonor--tablet@2x.webp");
   }
 
   .cruises .cruises-item--minion-1 .cruises-item__order-button::before {
-    background-image: url("/img/content-minion-1--tablet@2x.webp");
+    background-image: url("../img/content-minion-1--tablet@2x.webp");
   }
 
   .form .form__container {
-    background-image: url("/img/background-form--tablet@2x.webp");
+    background-image: url("../img/background-form--tablet@2x.webp");
   }
 }
 
@@ -2049,7 +2049,7 @@ button,
   }
 
   .main-header .main-header__container {
-    background: no-repeat bottom 0 left 0/100% url("/img/background-promo--mobile.webp") #4e6b8b;
+    background: no-repeat bottom 0 left 0/100% url("../img/background-promo--mobile.webp") #4e6b8b;
   }
 
   .navigation {
@@ -2282,7 +2282,7 @@ button,
   }
 
   .about .about__container::after {
-    background: no-repeat top 0 left 0/100% url("/img/pinguins--mobile.webp");
+    background: no-repeat top 0 left 0/100% url("../img/pinguins--mobile.webp");
   }
 
   .features__container {
@@ -2388,35 +2388,35 @@ button,
   }
 
   .cruises .cruises-item--astoria .cruises-item__order-button::before {
-    background-image: url("/img/content-astoria--mobile.webp");
+    background-image: url("../img/content-astoria--mobile.webp");
   }
 
   .cruises .cruises-item--eline .cruises-item__order-button::before {
-    background-image: url("/img/content-eline--mobile.webp");
+    background-image: url("../img/content-eline--mobile.webp");
   }
 
   .cruises .cruises-item--atlantis .cruises-item__order-button::before {
-    background-image: url("/img/content-atlantis--mobile.webp");
+    background-image: url("../img/content-atlantis--mobile.webp");
   }
 
   .cruises .cruises-item--odyssey .cruises-item__order-button::before {
-    background-image: url("/img/content-odyssey--mobile.webp");
+    background-image: url("../img/content-odyssey--mobile.webp");
   }
 
   .cruises .cruises-item--olympia .cruises-item__order-button::before {
-    background-image: url("/img/content-olympia--mobile.webp");
+    background-image: url("../img/content-olympia--mobile.webp");
   }
 
   .cruises .cruises-item--aurora .cruises-item__order-button::before {
-    background-image: url("/img/content-aurora--mobile.webp");
+    background-image: url("../img/content-aurora--mobile.webp");
   }
 
   .cruises .cruises-item--leonor .cruises-item__order-button::before {
-    background-image: url("/img/content-leonor--mobile.webp");
+    background-image: url("../img/content-leonor--mobile.webp");
   }
 
   .cruises .cruises-item--minion-1 .cruises-item__order-button::before {
-    background-image: url("/img/content-minion-1--mobile.webp");
+    background-image: url("../img/content-minion-1--mobile.webp");
   }
 
   .form__container {
@@ -2568,7 +2568,7 @@ button,
 
   .form .form__container {
     padding: 18.6vw 5vw 20.4vw;
-    background: no-repeat top 0 left 0/100% url("/img/background-form--mobile.webp") #cacfd4;
+    background: no-repeat top 0 left 0/100% url("../img/background-form--mobile.webp") #cacfd4;
   }
 
   .location__container {
@@ -2611,7 +2611,7 @@ button,
   }
 
   .location__address::before {
-    background: no-repeat top 1.7vw left 0 url("/img/sprite/icon-map-pin.svg");
+    background: no-repeat top 1.7vw left 0 url("../img/sprite/icon-map-pin.svg");
   }
 
   .location__phone {
@@ -2671,96 +2671,96 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .main-header .main-header__container {
-    background: no-repeat bottom 0 left 0/100% url("/img/background-promo--mobile@2x.webp") #4e6b8b;
+    background: no-repeat bottom 0 left 0/100% url("../img/background-promo--mobile@2x.webp") #4e6b8b;
   }
 
   .about .about__container::after {
-    background: no-repeat top 0 left 0/100% url("/img/pinguins--mobile@2x.webp");
+    background: no-repeat top 0 left 0/100% url("../img/pinguins--mobile@2x.webp");
   }
 
   .cruises .cruises-item--astoria .cruises-item__order-button::before {
-    background-image: url("/img/content-astoria--mobile@2x.webp");
+    background-image: url("../img/content-astoria--mobile@2x.webp");
   }
 
   .cruises .cruises-item--eline .cruises-item__order-button::before {
-    background-image: url("/img/content-eline--mobile@2x.webp");
+    background-image: url("../img/content-eline--mobile@2x.webp");
   }
 
   .cruises .cruises-item--atlantis .cruises-item__order-button::before {
-    background-image: url("/img/content-atlantis--mobile@2x.webp");
+    background-image: url("../img/content-atlantis--mobile@2x.webp");
   }
 
   .cruises .cruises-item--odyssey .cruises-item__order-button::before {
-    background-image: url("/img/content-odyssey--mobile@2x.webp");
+    background-image: url("../img/content-odyssey--mobile@2x.webp");
   }
 
   .cruises .cruises-item--olympia .cruises-item__order-button::before {
-    background-image: url("/img/content-olympia--mobile@2x.webp");
+    background-image: url("../img/content-olympia--mobile@2x.webp");
   }
 
   .cruises .cruises-item--aurora .cruises-item__order-button::before {
-    background-image: url("/img/content-aurora--mobile@2x.webp");
+    background-image: url("../img/content-aurora--mobile@2x.webp");
   }
 
   .cruises .cruises-item--leonor .cruises-item__order-button::before {
-    background-image: url("/img/content-leonor--mobile@2x.webp");
+    background-image: url("../img/content-leonor--mobile@2x.webp");
   }
 
   .cruises .cruises-item--minion-1 .cruises-item__order-button::before {
-    background-image: url("/img/content-minion-1--mobile@2x.webp");
+    background-image: url("../img/content-minion-1--mobile@2x.webp");
   }
 
   .form .form__container {
-    background-image: url("/img/background-form--mobile@2x.webp");
+    background-image: url("../img/background-form--mobile@2x.webp");
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .main-header__container {
-    background: no-repeat top 0 left 0/100% url("/img/background-promo--desktop@2x.webp") #4e6b8b;
+    background: no-repeat top 0 left 0/100% url("../img/background-promo--desktop@2x.webp") #4e6b8b;
   }
 
   .about__container::after {
-    background: no-repeat top 0 left 0/100% url("/img/pinguins--desktop@2x.webp");
+    background: no-repeat top 0 left 0/100% url("../img/pinguins--desktop@2x.webp");
   }
 
   .features__container {
-    background: no-repeat top 0 left 0/100% url("/img/background-features--desktop@2x.webp") #cddeed;
+    background: no-repeat top 0 left 0/100% url("../img/background-features--desktop@2x.webp") #cddeed;
   }
 
   .cruises-item--astoria .cruises-item__order-button::before {
-    background-image: url("/img/content-astoria--desktop@2x.webp");
+    background-image: url("../img/content-astoria--desktop@2x.webp");
   }
 
   .cruises-item--eline .cruises-item__order-button::before {
-    background-image: url("/img/content-eline--desktop@2x.webp");
+    background-image: url("../img/content-eline--desktop@2x.webp");
   }
 
   .cruises-item--atlantis .cruises-item__order-button::before {
-    background-image: url("/img/content-atlantis--desktop@2x.webp");
+    background-image: url("../img/content-atlantis--desktop@2x.webp");
   }
 
   .cruises-item--odyssey .cruises-item__order-button::before {
-    background-image: url("/img/content-odyssey--desktop@2x.webp");
+    background-image: url("../img/content-odyssey--desktop@2x.webp");
   }
 
   .cruises-item--olympia .cruises-item__order-button::before {
-    background-image: url("/img/content-olympia--desktop@2x.webp");
+    background-image: url("../img/content-olympia--desktop@2x.webp");
   }
 
   .cruises-item--aurora .cruises-item__order-button::before {
-    background-image: url("/img/content-aurora--desktop@2x.webp");
+    background-image: url("../img/content-aurora--desktop@2x.webp");
   }
 
   .cruises-item--leonor .cruises-item__order-button::before {
-    background-image: url("/img/content-leonor--desktop@2x.webp");
+    background-image: url("../img/content-leonor--desktop@2x.webp");
   }
 
   .cruises-item--minion-1 .cruises-item__order-button::before {
-    background-image: url("/img/content-minion-1--desktop@2x.webp");
+    background-image: url("../img/content-minion-1--desktop@2x.webp");
   }
 
   .form__container {
-    background-image: url("/img/background-form--desktop@2x.webp");
+    background-image: url("../img/background-form--desktop@2x.webp");
   }
 }

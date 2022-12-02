@@ -2,10 +2,10 @@
   &__container {
     padding-top: 8.1vw;
     padding-bottom: 8.75vw;
-    background: no-repeat top 0 left 0/100% url("/img/background-features--desktop.webp") $color-pattens-blue;
+    background: no-repeat top 0 left 0/100% url("../img/background-features--desktop.webp") $color-pattens-blue;
 
     @include retina {
-      background: no-repeat top 0 left 0/100% url("/img/background-features--desktop@2x.webp") $color-pattens-blue;
+      background: no-repeat top 0 left 0/100% url("../img/background-features--desktop@2x.webp") $color-pattens-blue;
     }
 
     @include vp-1023 {
@@ -69,10 +69,10 @@
 
 .features .features__container {
   @include vp-1023 {
-    background: no-repeat top 0 left 0/100% url("/img/background-features--tablet.webp") $color-pattens-blue;
+    background: no-repeat top 0 left 0/100% url("../img/background-features--tablet.webp") $color-pattens-blue;
 
     @include retina {
-      background: no-repeat top 0 left 0/100% url("/img/background-features--tablet@2x.webp") $color-pattens-blue;
+      background: no-repeat top 0 left 0/100% url("../img/background-features--tablet@2x.webp") $color-pattens-blue;
     }
   }
 }

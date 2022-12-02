@@ -156,66 +156,66 @@
   }
 
   &--astoria &__order-button::before {
-    background-image: url("/img/content-astoria--desktop.webp");
+    background-image: url("../img/content-astoria--desktop.webp");
 
     @include retina {
-      background-image: url("/img/content-astoria--desktop@2x.webp");
+      background-image: url("../img/content-astoria--desktop@2x.webp");
     }
   }
 
   &--eline &__order-button::before {
-    background-image: url("/img/content-eline--desktop.webp");
+    background-image: url("../img/content-eline--desktop.webp");
 
     @include retina {
-      background-image: url("/img/content-eline--desktop@2x.webp");
+      background-image: url("../img/content-eline--desktop@2x.webp");
     }
   }
 
   &--atlantis &__order-button::before {
-    background-image: url("/img/content-atlantis--desktop.webp");
+    background-image: url("../img/content-atlantis--desktop.webp");
 
     @include retina {
-      background-image: url("/img/content-atlantis--desktop@2x.webp");
+      background-image: url("../img/content-atlantis--desktop@2x.webp");
     }
   }
 
   &--odyssey &__order-button::before {
-    background-image: url("/img/content-odyssey--desktop.webp");
+    background-image: url("../img/content-odyssey--desktop.webp");
 
     @include retina {
-      background-image: url("/img/content-odyssey--desktop@2x.webp");
+      background-image: url("../img/content-odyssey--desktop@2x.webp");
     }
   }
 
   &--olympia &__order-button::before {
-    background-image: url("/img/content-olympia--desktop.webp");
+    background-image: url("../img/content-olympia--desktop.webp");
 
     @include retina {
-      background-image: url("/img/content-olympia--desktop@2x.webp");
+      background-image: url("../img/content-olympia--desktop@2x.webp");
     }
   }
 
   &--aurora &__order-button::before {
-    background-image: url("/img/content-aurora--desktop.webp");
+    background-image: url("../img/content-aurora--desktop.webp");
 
     @include retina {
-      background-image: url("/img/content-aurora--desktop@2x.webp");
+      background-image: url("../img/content-aurora--desktop@2x.webp");
     }
   }
 
   &--leonor &__order-button::before {
-    background-image: url("/img/content-leonor--desktop.webp");
+    background-image: url("../img/content-leonor--desktop.webp");
 
     @include retina {
-      background-image: url("/img/content-leonor--desktop@2x.webp");
+      background-image: url("../img/content-leonor--desktop@2x.webp");
     }
   }
 
   &--minion-1 &__order-button::before {
-    background-image: url("/img/content-minion-1--desktop.webp");
+    background-image: url("../img/content-minion-1--desktop.webp");
 
     @include retina {
-      background-image: url("/img/content-minion-1--desktop@2x.webp");
+      background-image: url("../img/content-minion-1--desktop@2x.webp");
     }
   }
 }
@@ -223,18 +223,18 @@
 .cruises .cruises-item--astoria {
   & .cruises-item__order-button::before {
     @include vp-1023 {
-      background-image: url("/img/content-astoria--tablet.webp");
+      background-image: url("../img/content-astoria--tablet.webp");
 
       @include retina {
-        background-image: url("/img/content-astoria--tablet@2x.webp");
+        background-image: url("../img/content-astoria--tablet@2x.webp");
       }
     }
 
     @include vp-767 {
-      background-image: url("/img/content-astoria--mobile.webp");
+      background-image: url("../img/content-astoria--mobile.webp");
 
       @include retina {
-        background-image: url("/img/content-astoria--mobile@2x.webp");
+        background-image: url("../img/content-astoria--mobile@2x.webp");
       }
     }
   }
@@ -243,18 +243,18 @@
 .cruises .cruises-item--eline {
   & .cruises-item__order-button::before {
     @include vp-1023 {
-      background-image: url("/img/content-eline--tablet.webp");
+      background-image: url("../img/content-eline--tablet.webp");
 
       @include retina {
-        background-image: url("/img/content-eline--tablet@2x.webp");
+        background-image: url("../img/content-eline--tablet@2x.webp");
       }
     }
 
     @include vp-767 {
-      background-image: url("/img/content-eline--mobile.webp");
+      background-image: url("../img/content-eline--mobile.webp");
 
       @include retina {
-        background-image: url("/img/content-eline--mobile@2x.webp");
+        background-image: url("../img/content-eline--mobile@2x.webp");
       }
     }
   }
@@ -263,18 +263,18 @@
 .cruises .cruises-item--atlantis {
   & .cruises-item__order-button::before {
     @include vp-1023 {
-      background-image: url("/img/content-atlantis--tablet.webp");
+      background-image: url("../img/content-atlantis--tablet.webp");
 
       @include retina {
-        background-image: url("/img/content-atlantis--tablet@2x.webp");
+        background-image: url("../img/content-atlantis--tablet@2x.webp");
       }
     }
 
     @include vp-767 {
-      background-image: url("/img/content-atlantis--mobile.webp");
+      background-image: url("../img/content-atlantis--mobile.webp");
 
       @include retina {
-        background-image: url("/img/content-atlantis--mobile@2x.webp");
+        background-image: url("../img/content-atlantis--mobile@2x.webp");
       }
     }
   }
@@ -283,18 +283,18 @@
 .cruises .cruises-item--odyssey {
   & .cruises-item__order-button::before {
     @include vp-1023 {
-      background-image: url("/img/content-odyssey--tablet.webp");
+      background-image: url("../img/content-odyssey--tablet.webp");
 
       @include retina {
-        background-image: url("/img/content-odyssey--tablet@2x.webp");
+        background-image: url("../img/content-odyssey--tablet@2x.webp");
       }
     }
 
     @include vp-767 {
-      background-image: url("/img/content-odyssey--mobile.webp");
+      background-image: url("../img/content-odyssey--mobile.webp");
 
       @include retina {
-        background-image: url("/img/content-odyssey--mobile@2x.webp");
+        background-image: url("../img/content-odyssey--mobile@2x.webp");
       }
     }
   }
@@ -303,18 +303,18 @@
 .cruises .cruises-item--olympia {
   & .cruises-item__order-button::before {
     @include vp-1023 {
-      background-image: url("/img/content-olympia--tablet.webp");
+      background-image: url("../img/content-olympia--tablet.webp");
 
       @include retina {
-        background-image: url("/img/content-olympia--tablet@2x.webp");
+        background-image: url("../img/content-olympia--tablet@2x.webp");
       }
     }
 
     @include vp-767 {
-      background-image: url("/img/content-olympia--mobile.webp");
+      background-image: url("../img/content-olympia--mobile.webp");
 
       @include retina {
-        background-image: url("/img/content-olympia--mobile@2x.webp");
+        background-image: url("../img/content-olympia--mobile@2x.webp");
       }
     }
   }
@@ -323,18 +323,18 @@
 .cruises .cruises-item--aurora {
   & .cruises-item__order-button::before {
     @include vp-1023 {
-      background-image: url("/img/content-aurora--tablet.webp");
+      background-image: url("../img/content-aurora--tablet.webp");
 
       @include retina {
-        background-image: url("/img/content-aurora--tablet@2x.webp");
+        background-image: url("../img/content-aurora--tablet@2x.webp");
       }
     }
 
     @include vp-767 {
-      background-image: url("/img/content-aurora--mobile.webp");
+      background-image: url("../img/content-aurora--mobile.webp");
 
       @include retina {
-        background-image: url("/img/content-aurora--mobile@2x.webp");
+        background-image: url("../img/content-aurora--mobile@2x.webp");
       }
     }
   }
@@ -343,18 +343,18 @@
 .cruises .cruises-item--leonor {
   & .cruises-item__order-button::before {
     @include vp-1023 {
-      background-image: url("/img/content-leonor--tablet.webp");
+      background-image: url("../img/content-leonor--tablet.webp");
 
       @include retina {
-        background-image: url("/img/content-leonor--tablet@2x.webp");
+        background-image: url("../img/content-leonor--tablet@2x.webp");
       }
     }
 
     @include vp-767 {
-      background-image: url("/img/content-leonor--mobile.webp");
+      background-image: url("../img/content-leonor--mobile.webp");
 
       @include retina {
-        background-image: url("/img/content-leonor--mobile@2x.webp");
+        background-image: url("../img/content-leonor--mobile@2x.webp");
       }
     }
   }
@@ -363,18 +363,18 @@
 .cruises .cruises-item--minion-1 {
   & .cruises-item__order-button::before {
     @include vp-1023 {
-      background-image: url("/img/content-minion-1--tablet.webp");
+      background-image: url("../img/content-minion-1--tablet.webp");
 
       @include retina {
-        background-image: url("/img/content-minion-1--tablet@2x.webp");
+        background-image: url("../img/content-minion-1--tablet@2x.webp");
       }
     }
 
     @include vp-767 {
-      background-image: url("/img/content-minion-1--mobile.webp");
+      background-image: url("../img/content-minion-1--mobile.webp");
 
       @include retina {
-        background-image: url("/img/content-minion-1--mobile@2x.webp");
+        background-image: url("../img/content-minion-1--mobile@2x.webp");
       }
     }
   }

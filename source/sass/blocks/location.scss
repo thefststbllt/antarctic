@@ -112,14 +112,14 @@
     }
 
     &::before {
-      background: no-repeat top 0 left 0/100% url("/img/sprite/icon-map-pin.svg");
+      background: no-repeat top 0 left 0/100% url("../img/sprite/icon-map-pin.svg");
 
       @include vp-1023 {
-        background: no-repeat top 0.8vw left 0 url("/img/sprite/icon-map-pin.svg");
+        background: no-repeat top 0.8vw left 0 url("../img/sprite/icon-map-pin.svg");
       }
 
       @include vp-767 {
-        background: no-repeat top 1.7vw left 0 url("/img/sprite/icon-map-pin.svg");
+        background: no-repeat top 1.7vw left 0 url("../img/sprite/icon-map-pin.svg");
       }
     }
   }
@@ -146,7 +146,7 @@
     }
 
     &::before {
-      background: no-repeat top 0 left 0/100% url("/img/sprite/icon-phone.svg");
+      background: no-repeat top 0 left 0/100% url("../img/sprite/icon-phone.svg");
     }
   }
 }
