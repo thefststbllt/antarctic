@@ -2067,6 +2067,16 @@ button,
     min-width: 89%;
   }
 
+  .navigation--menu-opened::before {
+    content: "";
+    display: block;
+    height: 100%;
+    min-width: 13%;
+    background: rgba(0, 43, 102, 0.5);
+    position: absolute;
+    left: -13%;
+  }
+
   .navigation--menu-opened .navigation__top-wrapper {
     z-index: 4;
     display: -webkit-box;

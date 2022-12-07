@@ -19,6 +19,16 @@
       right: 4.8vw;
       min-width: 89%;
 
+      &::before {
+        content: '';
+        display: block;
+        height: 100%;
+        min-width: 13%;
+        background: rgba(0, 43, 102, 0.5);
+        position: absolute;
+        left: -13%;
+      }
+
       & .navigation__top-wrapper {
         z-index: 4;
         display: flex;

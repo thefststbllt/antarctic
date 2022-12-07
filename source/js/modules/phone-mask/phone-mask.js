@@ -6,7 +6,9 @@ const phoneInputs = document.getElementsByName('user-phone');
 export const getPhoneMask = () => {
   phoneInputs.forEach((input) => {
     input.addEventListener('focus', () => {
-      iMask(input, {mask: '+{7}(000)000-00-00'});
+      iMask(input, {
+        mask: '+{7}(000)000-00-00',
+      });
     });
   });
 };
