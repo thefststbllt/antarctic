@@ -1307,6 +1307,7 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: #011c40;
 }
 
 .form form button:hover {
@@ -2591,6 +2592,19 @@ button,
   .form form button {
     font-size: 4.4vw;
     padding: 3.25vw 3vw 3.5vw;
+  }
+
+  .form form button:hover {
+    background-color: #ffffff;
+    color: #011c40;
+  }
+
+  .form form button:active {
+    background-color: #007aff;
+    color: #ffffff;
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    transition: 0.3s all;
   }
 
   .form .form__container {
