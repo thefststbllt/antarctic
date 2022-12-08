@@ -377,16 +377,19 @@
       cursor: pointer;
       transition: 0.3s all;
       user-select: none;
+      background-color: $color-default-white;
+      color: $color-tangaroa;
 
-      &:hover,
-      &:focus {
-        background-color: $color-dodger-blue;
-        color: $color-default-white;
-        transition: 0.3s all;
-      }
+      @media (min-width: 768px) {
+        &:hover {
+          background-color: $color-dodger-blue;
+          color: $color-default-white;
+          transition: 0.3s all;
+        }
 
-      &:focus {
-        outline: 0.1vw solid $color-alice-blue;
+        &:focus {
+          outline: 0.1vw solid $color-dodger-blue;
+        }
       }
 
       &:hover {
@@ -401,6 +404,17 @@
       @include vp-767 {
         font-size: 4.4vw;
         padding: 3.25vw 3vw 3.5vw;
+
+        &:hover {
+          background-color: $color-default-white;
+          color: $color-tangaroa;
+        }
+
+        &:active {
+          background-color: $color-dodger-blue;
+          color: $color-default-white;
+          transition: 0.3s all;
+        }
       }
     }
   }
