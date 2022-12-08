@@ -1310,10 +1310,6 @@ button,
   color: #011c40;
 }
 
-.form form button:focus {
-  outline: 0.1vw solid #007aff;
-}
-
 .form form button:hover {
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
@@ -1523,6 +1519,10 @@ button,
     -webkit-transition: 0.3s all;
     -o-transition: 0.3s all;
     transition: 0.3s all;
+  }
+
+  .form form button:focus {
+    outline: 0.1vw solid #007aff;
   }
 }
 
