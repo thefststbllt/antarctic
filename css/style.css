@@ -1309,8 +1309,7 @@ button,
   user-select: none;
 }
 
-.form form button:hover,
-.form form button:focus {
+.form form button:hover {
   background-color: #007aff;
   color: #ffffff;
   -webkit-transition: 0.3s all;
