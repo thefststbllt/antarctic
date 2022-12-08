@@ -4,6 +4,7 @@
     padding-top: 2.6vw;
     padding-bottom: 6vw;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    position: relative;
     background: no-repeat top 0 left 0/100% url("../img/background-promo--desktop.webp") $color-wedgewood;
 
     @include retina {

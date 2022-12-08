@@ -642,6 +642,7 @@ button,
   padding-bottom: 6vw;
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  position: relative;
   background: no-repeat top 0 left 0/100% url("../img/background-promo--desktop.webp") #4e6b8b;
 }
 
@@ -674,6 +675,10 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.navigation .navigation__mobile-layout {
+  display: none;
 }
 
 .navigation__top-wrapper {
@@ -940,6 +945,11 @@ button,
   -webkit-transform: translateY(0) translateX(0);
   -ms-transform: translateY(0) translateX(0);
   transform: translateY(0) translateX(0);
+}
+
+.cruises-item__wrapper {
+  max-height: 16.04vw;
+  overflow: scroll;
 }
 
 .cruises-item__title {
@@ -1675,6 +1685,10 @@ button,
     margin: 0 0 1.49vw;
   }
 
+  .cruises-item__wrapper {
+    max-height: 28.61vw;
+  }
+
   .cruises-item__title {
     font-size: 2.36vw;
     margin: 0 0 1.45vw;
@@ -2067,16 +2081,6 @@ button,
     min-width: 89%;
   }
 
-  .navigation--menu-opened::before {
-    content: "";
-    display: block;
-    height: 100%;
-    min-width: 13%;
-    background: rgba(0, 43, 102, 0.5);
-    position: absolute;
-    left: -13%;
-  }
-
   .navigation--menu-opened .navigation__top-wrapper {
     z-index: 4;
     display: -webkit-box;
@@ -2152,6 +2156,16 @@ button,
 
   .navigation--menu-opened + .main-header__page-title {
     margin: 49.4vw auto 3.5vw 0;
+  }
+
+  .navigation .navigation__mobile-layout {
+    display: block;
+    height: 100%;
+    min-width: 13%;
+    background: rgba(0, 43, 102, 0.5);
+    position: absolute;
+    top: 0;
+    left: -13%;
   }
 
   .navigation--menu-closed .navigation__top-wrapper {
@@ -2368,6 +2382,10 @@ button,
 
   .cruises-item:hover .cruises-item__title {
     margin: 0 0 3.5vw;
+  }
+
+  .cruises-item__wrapper {
+    max-height: 68.99vw;
   }
 
   .cruises-item__title {

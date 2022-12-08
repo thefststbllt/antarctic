@@ -2,6 +2,7 @@
   "name": "liga-a-accelerator-antarctic",
   "version": "2.0.0",
   "type": "module",
+  "homepage": "https://thefststbllt.github.io/antarctic",
   "description": "Проект Круизы в Антарктику по шаблону сборки Лиги А",
   "browserslist": [
     "last 3 versions",
@@ -39,6 +40,7 @@
     "del": "6.1.1",
     "duplicate-package-checker-webpack-plugin": "3.0.0",
     "eslint": "7.32.0",
+    "gh-pages": "4.0.0",
     "gulp": "4.0.2",
     "gulp-csso": "4.0.1",
     "gulp-group-css-media-queries": "1.2.2",

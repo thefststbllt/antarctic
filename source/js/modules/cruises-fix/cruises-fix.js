@@ -9,6 +9,8 @@ export const handleMobileCruises = () => {
       button.addEventListener('click', (evt) => {
         if (evt.target !== 'cruises-item__order-button') {
           evt.preventDefault();
+          button.style.backgroundColor = '#F9FBFD';
+          button.style.color = '#011C40';
         }
       });
     });

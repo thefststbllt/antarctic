@@ -3,6 +3,7 @@ import {MAX_DEVICE_WIDTH} from '../../utils/platforms';
 const siteNavigation = document.querySelector('.navigation');
 const burgerButton = siteNavigation.querySelector('.navigation__menu-button');
 const buttonLine = burgerButton.querySelector('.navigation__button-line');
+const menuOverlay = siteNavigation.querySelector('.navigation__mobile-layout');
 
 const closeMenu = () => {
   siteNavigation.classList.toggle('navigation--menu-opened');
@@ -11,7 +12,7 @@ const closeMenu = () => {
 };
 
 const toggleMenu = (evt) => {
-  if (evt.target === burgerButton || evt.target === buttonLine) {
+  if (evt.target === burgerButton || evt.target === buttonLine || evt.target === menuOverlay) {
     closeMenu();
     if (siteNavigation.classList.value.includes('navigation--menu-opened')) {
       document.body.style.overflow = 'hidden';
